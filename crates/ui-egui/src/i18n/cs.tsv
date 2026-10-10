@@ -2248,3 +2248,14 @@ fontWeight	Italic	Kurzíva
 	Rotate View Tool	Nástroj otočení zobrazení
 	Reset View	Obnovit zobrazení
 	Drag around the centre to rotate the view  ·  Shift constrains to 15°	Tažením kolem středu otočíte zobrazení  ·  Shift omezí na 15°
+
+# Experimental ChatGPT image dialog
+	ChatGPT Images…	Obrázky ChatGPT…
+	Experimental · ChatGPT subscription	Experimentální · Předplatné ChatGPT
+	Describe your image	Popište obrázek
+	Describe the subject, setting and style	Popište objekt, prostředí a styl
+	Plan: {plan}	Tarif: {plan}
+	Check connection	Ověřit připojení
+	Uses included Codex allowance. No API key or paid fallback.	Používá zahrnutý limit Codex. Bez klíče API nebo placené náhrady.
+	Images use more of your included allowance.	Obrázky spotřebují více zahrnutého limitu.
+	Generate image	Vytvořit obrázek

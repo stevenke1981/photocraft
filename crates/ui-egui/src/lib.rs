@@ -37,6 +37,7 @@ pub mod canvas;
 pub mod canvas_tool_menu;
 pub mod channel_view;
 pub mod channels_panel;
+pub mod chatgpt_ui;
 pub mod chrome_ui;
 pub mod cjk_fonts;
 pub mod clip_line_ui;

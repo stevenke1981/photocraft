@@ -150,6 +150,9 @@ fn file_error(operation: &str, path: &str, error: std::io::Error) -> AutomationE
 /// directory capabilities. Automation must use `doc.open`, `doc.save` and
 /// `doc.render` for file effects until those commands are migrated.
 pub fn authorize_engine_command(id: &str, params: &Value) -> Result<(), AutomationError> {
+    if id.starts_with("imagegen.") {
+        return Err(AutomationError::BadRequest("ChatGPT image generation requires an explicit trusted local invocation".into()));
+    }
     let safe_file_command = matches!(
         id,
         "file.new"
@@ -434,6 +437,8 @@ mod tests {
     #[test]
     fn filesystem_commands_fail_closed() {
         for id in [
+            "imagegen.status",
+            "imagegen.generate",
             "file.open",
             "file.openAs",
             "file.save",

@@ -3361,3 +3361,14 @@ fontWeight	Thin	Πολύ λεπτά
 # Saved New Document presets (#1516)
 	Preset Name	Όνομα προεπιλογής
 	No saved presets yet.	Δεν υπάρχουν ακόμη αποθηκευμένες προεπιλογές.
+
+# Experimental ChatGPT image dialog
+	ChatGPT Images…	Εικόνες ChatGPT…
+	Experimental · ChatGPT subscription	Πειραματικό · Συνδρομή ChatGPT
+	Describe your image	Περιγράψτε την εικόνα σας
+	Describe the subject, setting and style	Περιγράψτε το θέμα, το σκηνικό και το ύφος
+	Plan: {plan}	Πρόγραμμα: {plan}
+	Check connection	Έλεγχος σύνδεσης
+	Uses included Codex allowance. No API key or paid fallback.	Χρησιμοποιεί το διαθέσιμο όριο Codex. Χωρίς κλειδί API ή εναλλακτική επί πληρωμή.
+	Images use more of your included allowance.	Οι εικόνες καταναλώνουν περισσότερο από το διαθέσιμο όριο.
+	Generate image	Δημιουργία εικόνας

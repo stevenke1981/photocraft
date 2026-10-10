@@ -4145,6 +4145,7 @@ dependencies = [
  "photocraft-doc",
  "photocraft-format",
  "photocraft-geom",
+ "photocraft-imagegen",
  "photocraft-io",
  "photocraft-ops",
  "photocraft-paint",
@@ -4208,6 +4209,15 @@ name = "photocraft-heif"
 version = "0.5.0"
 dependencies = [
  "heic-rs",
+]
+
+[[package]]
+name = "photocraft-imagegen"
+version = "0.5.0"
+dependencies = [
+ "base64",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]

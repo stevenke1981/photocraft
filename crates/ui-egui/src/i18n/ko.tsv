@@ -2827,3 +2827,14 @@ fontWeight	Italic	기울임
 	Rotate View Tool	보기 회전 도구
 	Reset View	보기 재설정
 	Drag around the centre to rotate the view  ·  Shift constrains to 15°	중심 주위를 드래그해 보기를 회전합니다  ·  Shift는 15°로 제한
+
+# Experimental ChatGPT image dialog
+	ChatGPT Images…	ChatGPT 이미지…
+	Experimental · ChatGPT subscription	실험 기능 · ChatGPT 구독
+	Describe your image	원하는 이미지를 설명하세요
+	Describe the subject, setting and style	주제, 배경, 스타일을 설명하세요
+	Plan: {plan}	요금제: {plan}
+	Check connection	연결 확인
+	Uses included Codex allowance. No API key or paid fallback.	구독에 포함된 Codex 사용량을 사용합니다. API 키나 유료 대체 서비스는 사용하지 않습니다.
+	Images use more of your included allowance.	이미지 생성은 포함된 사용량을 더 많이 소모합니다.
+	Generate image	이미지 생성

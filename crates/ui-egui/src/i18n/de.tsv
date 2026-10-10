@@ -2287,3 +2287,14 @@ fontWeight	Italic	Kursiv
 	Rotate View Tool	Ansicht-drehen-Werkzeug
 	Reset View	Ansicht zurücksetzen
 	Drag around the centre to rotate the view  ·  Shift constrains to 15°	Ansicht drehen: im Bogen ziehen · Umschalt: 15°-Schritte
+
+# Experimental ChatGPT image dialog
+	ChatGPT Images…	ChatGPT-Bilder…
+	Experimental · ChatGPT subscription	Experimentell · ChatGPT-Abonnement
+	Describe your image	Beschreiben Sie Ihr Bild
+	Describe the subject, setting and style	Motiv, Umgebung und Stil beschreiben
+	Plan: {plan}	Tarif: {plan}
+	Check connection	Verbindung prüfen
+	Uses included Codex allowance. No API key or paid fallback.	Nutzt das enthaltene Codex-Kontingent. Kein API-Schlüssel oder kostenpflichtiger Ersatz.
+	Images use more of your included allowance.	Bilder verbrauchen mehr vom enthaltenen Kontingent.
+	Generate image	Bild erzeugen

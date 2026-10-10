@@ -302,6 +302,11 @@ Maintainers: [`docs/releasing.md`](docs/releasing.md) explains how releases are 
 
 ## Documentation
 
+Experimental native [ChatGPT Images](docs/chatgpt-images.md) uses an existing official Codex
+ChatGPT login and included subscription allowance; paid API fallback is disabled. Real-image
+acceptance on the development account is blocked by its Codex quota and available credits;
+see the documented subscription-only spending constraints before attempting a real image.
+
 Developer, architecture, automation, format, and security documentation is maintained in the [PhotoCraft documentation book](book/).
 
 To self-host the browser version with Docker, see [Docker web hosting](packaging/web/README.md#docker).

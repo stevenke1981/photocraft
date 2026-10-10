@@ -2658,3 +2658,14 @@ fontWeight	Italic	Miring
 	Rotate View Tool	Alat Putar Tampilan
 	Reset View	Atur Ulang Tampilan
 	Drag around the centre to rotate the view  ·  Shift constrains to 15°	Seret di sekitar pusat untuk memutar tampilan  ·  Shift membatasi ke 15°
+
+# Experimental ChatGPT image dialog
+	ChatGPT Images…	Gambar ChatGPT…
+	Experimental · ChatGPT subscription	Eksperimental · Langganan ChatGPT
+	Describe your image	Jelaskan gambar Anda
+	Describe the subject, setting and style	Jelaskan subjek, latar, dan gaya
+	Plan: {plan}	Paket: {plan}
+	Check connection	Periksa koneksi
+	Uses included Codex allowance. No API key or paid fallback.	Menggunakan kuota Codex yang disertakan. Tanpa kunci API atau alternatif berbayar.
+	Images use more of your included allowance.	Gambar menggunakan lebih banyak kuota yang disertakan.
+	Generate image	Buat gambar

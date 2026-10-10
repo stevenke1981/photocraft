@@ -3272,3 +3272,14 @@ cameraRaw	Roughness	Chropowatość
 	Rotate View Tool	Narzędzie Obróć widok
 	Reset View	Resetuj widok
 	Drag around the centre to rotate the view  ·  Shift constrains to 15°	Przeciągnij wokół środka, aby obrócić widok  ·  Shift ogranicza do 15°
+
+# Experimental ChatGPT image dialog
+	ChatGPT Images…	Obrazy ChatGPT…
+	Experimental · ChatGPT subscription	Eksperymentalne · Subskrypcja ChatGPT
+	Describe your image	Opisz obraz
+	Describe the subject, setting and style	Opisz temat, otoczenie i styl
+	Plan: {plan}	Plan: {plan}
+	Check connection	Sprawdź połączenie
+	Uses included Codex allowance. No API key or paid fallback.	Korzysta z wliczonego limitu Codex. Bez klucza API i płatnej alternatywy.
+	Images use more of your included allowance.	Obrazy zużywają więcej wliczonego limitu.
+	Generate image	Generuj obraz

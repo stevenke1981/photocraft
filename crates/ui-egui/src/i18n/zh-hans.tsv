@@ -2256,3 +2256,14 @@ fontWeight	Italic	斜体
 	Rotate View Tool	旋转视图工具
 	Reset View	重置视图
 	Drag around the centre to rotate the view  ·  Shift constrains to 15°	绕中心拖动以旋转视图  ·  Shift 限制为 15°
+
+# Experimental ChatGPT image dialog
+	ChatGPT Images…	ChatGPT 图像…
+	Experimental · ChatGPT subscription	实验功能 · ChatGPT 订阅
+	Describe your image	描述您要生成的图像
+	Describe the subject, setting and style	描述主体、场景与风格
+	Plan: {plan}	方案：{plan}
+	Check connection	检查连接
+	Uses included Codex allowance. No API key or paid fallback.	使用订阅包含的 Codex 额度。无需 API 密钥，不会改用付费服务。
+	Images use more of your included allowance.	生图会消耗较多订阅额度。
+	Generate image	生成图像

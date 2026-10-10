@@ -9,7 +9,8 @@ use std::sync::mpsc;
 use std::time::Duration;
 
 fn fresh() -> Session {
-    let mut s = Session::new();
+    // Keep registry fuzzing hermetic: it must never discover a host's account-backed provider.
+    let mut s = Session::default();
     s.execute("file.new", json!({"width": 24, "height": 16})).unwrap();
     s.execute("layer.new.layer", json!({})).unwrap();
     s.execute("select.rect", json!({"x": 1, "y": 1, "width": 6, "height": 5})).unwrap();

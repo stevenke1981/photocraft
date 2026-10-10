@@ -134,6 +134,7 @@ pub fn show(app: &mut PhotocraftApp, ctx: &egui::Context) {
             ui.add_space(8.0);
             match d.kind {
                 DialogKind::NewDocument => crate::new_doc_ui::body(app, ui, &mut fields),
+                DialogKind::Command if crate::chatgpt_ui::owns(&fields) => crate::chatgpt_ui::body(app, ui, &mut fields),
                 DialogKind::About if fields.get("systemInfo").and_then(Value::as_bool) == Some(true) => {
                     let lines = crate::gpu_status::system_info(app);
                     for l in &lines {
@@ -221,12 +222,16 @@ pub fn show(app: &mut PhotocraftApp, ctx: &egui::Context) {
                     } else {
                         let ok_label = if d.kind == DialogKind::NewDocument {
                             tl!("Create")
+                        } else if crate::chatgpt_ui::owns(&fields) {
+                            tl!("Generate image")
                         } else if d.fields.contains_key("__export") {
                             tl!("Export")
                         } else {
                             crate::file_ui::ok_label(&d.fields).unwrap_or(tl!("OK"))
                         };
-                        let ok = DialogButton::new(ButtonRole::Default, ok_label, 84.0);
+                        let chatgpt = crate::chatgpt_ui::owns(&fields);
+                        let ok = DialogButton::new(ButtonRole::Default, ok_label, if chatgpt { 126.0 } else { 84.0 })
+                            .enabled(!chatgpt || crate::chatgpt_ui::can_generate(app, &fields));
                         // Photoshop: holding Alt turns Cancel into Reset (the dialog stays open).
                         let reset = ui.input(|i| i.modifiers.alt) && crate::adjust_dialog::resets(&fields);
                         let cancel_label = if reset {
@@ -248,7 +253,7 @@ pub fn show(app: &mut PhotocraftApp, ctx: &egui::Context) {
                             Some(ButtonRole::Cancel) => outcome = Some(false),
                             Some(ButtonRole::Apply) => apply_requested = true,
                             Some(_) => outcome = Some(true),
-                            None if ui.input(|i| i.key_pressed(egui::Key::Enter)) => outcome = Some(true),
+                            None if !chatgpt && ui.input(|i| i.key_pressed(egui::Key::Enter)) => outcome = Some(true),
                             None => {}
                         }
                     }
@@ -341,6 +346,7 @@ pub fn confirm(app: &mut PhotocraftApp, id: u64) -> Result<Value, String> {
             }
             r
         }
+        DialogKind::Command if crate::chatgpt_ui::owns(&d.fields) => crate::chatgpt_ui::confirm(app, &d.fields),
         DialogKind::Command if crate::fill_ui::owns(&d.fields) => crate::fill_ui::confirm(app, &d.fields),
         DialogKind::Command if crate::rasterize_prompt::owns(&d.fields) => crate::rasterize_prompt::confirm(app, &d.fields),
         DialogKind::Command if crate::variables_ui::owns(&d.fields) => crate::variables_ui::confirm(app, &d.fields),

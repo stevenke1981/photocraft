@@ -44,6 +44,7 @@ pub mod gradient_fill_cmds;
 pub mod group_view_cmds;
 pub mod hidden_target;
 pub mod image_cmds;
+pub mod imagegen_cmds;
 pub mod inspect;
 pub mod jobs;
 pub mod layer_copy_cmds;
@@ -269,6 +270,8 @@ impl Default for ToolState {
 
 #[derive(Default)]
 pub struct Session {
+    /// Experimental local ChatGPT image provider; never persisted with documents/preferences.
+    pub imagegen: imagegen_cmds::State,
     docs: Vec<DocState>,
     active: Option<usize>,
     pub tools: ToolState,
@@ -335,7 +338,7 @@ pub fn move_item<T>(v: &mut Vec<T>, i: usize, to: usize) -> Option<usize> {
 
 impl Session {
     pub fn new() -> Self {
-        Self::default()
+        Self { imagegen: imagegen_cmds::State::local(), ..Self::default() }
     }
 
     pub fn documents(&self) -> &[DocState] {

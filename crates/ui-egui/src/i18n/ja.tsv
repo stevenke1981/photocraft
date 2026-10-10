@@ -2231,3 +2231,14 @@ fontWeight	Italic	斜体
 	Rotate View Tool	表示回転ツール
 	Reset View	表示をリセット
 	Drag around the centre to rotate the view  ·  Shift constrains to 15°	中心の周りをドラッグして表示を回転  ·  Shift で 15° 単位
+
+# Experimental ChatGPT image dialog
+	ChatGPT Images…	ChatGPT 画像…
+	Experimental · ChatGPT subscription	実験機能 · ChatGPT サブスクリプション
+	Describe your image	生成する画像を説明
+	Describe the subject, setting and style	被写体、背景、スタイルを説明
+	Plan: {plan}	プラン: {plan}
+	Check connection	接続を確認
+	Uses included Codex allowance. No API key or paid fallback.	Codex の付属利用枠を使用します。API キーや有料の代替手段は使いません。
+	Images use more of your included allowance.	画像生成は付属利用枠をより多く消費します。
+	Generate image	画像を生成

@@ -2317,3 +2317,14 @@ fontWeight	Italic	Cursiva
 	Rotate View Tool	Herramienta Rotar vista
 	Reset View	Restablecer vista
 	Drag around the centre to rotate the view  ·  Shift constrains to 15°	Arrastre alrededor del centro para rotar la vista  ·  Mayús fija a 15°
+
+# Experimental ChatGPT image dialog
+	ChatGPT Images…	Imágenes de ChatGPT…
+	Experimental · ChatGPT subscription	Experimental · Suscripción a ChatGPT
+	Describe your image	Describa su imagen
+	Describe the subject, setting and style	Describa el sujeto, el entorno y el estilo
+	Plan: {plan}	Plan: {plan}
+	Check connection	Comprobar conexión
+	Uses included Codex allowance. No API key or paid fallback.	Usa la cuota de Codex incluida. Sin clave API ni alternativa de pago.
+	Images use more of your included allowance.	Las imágenes consumen más de la cuota incluida.
+	Generate image	Generar imagen
